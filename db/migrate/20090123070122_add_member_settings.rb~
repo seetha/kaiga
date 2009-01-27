@@ -1,0 +1,8 @@
+class AddMemberSettings < ActiveRecord::Migration
+  def self.up
+   MemberSetting.create(:status => 'test', :status_type => 'testtype') 
+  end
+
+  def self.down
+  end
+end

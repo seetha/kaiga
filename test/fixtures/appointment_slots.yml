@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  doctor_id: 1
+  day: 1
+  no_of_patients_per_hour: 1
+  start_time: 2008-11-18 14:37:06
+  end_time: 2008-11-18 14:37:06
+
+two:
+  doctor_id: 1
+  day: 1
+  no_of_patients_per_hour: 1
+  start_time: 2008-11-18 14:37:06
+  end_time: 2008-11-18 14:37:06

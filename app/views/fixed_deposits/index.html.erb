@@ -1,0 +1,34 @@
+<h1>Listing fixed_deposits</h1>
+
+<table>
+  <tr>
+    <th>Son daughter wife of</th>
+    <th>Resident address</th>
+    <th>Fdopen date</th>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Father husband</th>
+    <th>Relationship with member</th>
+    <th>Type</th>
+  </tr>
+
+<% for fixed_deposit in @fixed_deposits %>
+  <tr>
+    <td><%=h fixed_deposit.son_daughter_wife_of %></td>
+    <td><%=h fixed_deposit.resident_address %></td>
+    <td><%=h fixed_deposit.fdopen_date %></td>
+    <td><%=h fixed_deposit.name %></td>
+    <td><%=h fixed_deposit.age %></td>
+    <td><%=h fixed_deposit.father_husband %></td>
+    <td><%=h fixed_deposit.relationship_with_member %></td>
+    <td><%=h fixed_deposit.type %></td>
+    <td><%= link_to 'Show', fixed_deposit %></td>
+    <td><%= link_to 'Edit', edit_fixed_deposit_path(fixed_deposit) %></td>
+    <td><%= link_to 'Destroy', fixed_deposit, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New fixed_deposit', new_fixed_deposit_path %>

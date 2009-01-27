@@ -1,0 +1,148 @@
+<p>
+  <b>No of shares held:</b>
+  <%=h @loan.no_of_shares_held %>
+</p>
+
+<p>
+  <b>Telephone office:</b>
+  <%=h @loan.telephone_office %>
+</p>
+
+<p>
+  <b>Telephone residence:</b>
+  <%=h @loan.telephone_residence %>
+</p>
+
+<p>
+  <b>Basic pay:</b>
+  <%=h @loan.basic_pay %>
+</p>
+
+<p>
+  <b>Take home pay:</b>
+  <%=h @loan.take_home_pay %>
+</p>
+
+<p>
+  <b>Amount of loan applied:</b>
+  <%=h @loan.amount_of_loan_applied %>
+</p>
+
+<p>
+  <b>Purpose of loan:</b>
+  <%=h @loan.purpose_of_loan %>
+</p>
+
+<p>
+  <b>Outstanding loan:</b>
+  <%=h @loan.outstanding_loan %>
+</p>
+
+<p>
+  <b>Other information:</b>
+  <%=h @loan.other_information %>
+</p>
+
+<p>
+  <b>Doj society:</b>
+  <%=h @loan.doj_society %>
+</p>
+
+<p>
+  <b>Applicant mo no:</b>
+  <%=h @loan.applicant_mo_no %>
+</p>
+
+<p>
+  <b>Eligible for:</b>
+  <%=h @loan.eligible_for %>
+</p>
+
+<p>
+  <b>No of existing shares:</b>
+  <%=h @loan.no_of_existing_shares %>
+</p>
+
+<p>
+  <b>No of shares to be deducted:</b>
+  <%=h @loan.no_of_shares_to_be_deducted %>
+</p>
+
+<p>
+  <b>Loan no:</b>
+  <%=h @loan.loan_no %>
+</p>
+
+<p>
+  <b>Loan date:</b>
+  <%=h @loan.loan_date %>
+</p>
+
+<p>
+  <b>Installments:</b>
+  <%=h @loan.installments %>
+</p>
+
+<p>
+  <b>Share:</b>
+  <%=h @loan.share %>
+</p>
+
+<p>
+  <b>Entrance fees:</b>
+  <%=h @loan.entrance_fees %>
+</p>
+
+<p>
+  <b>Long term loan principle:</b>
+  <%=h @loan.long_term_loan_principle %>
+</p>
+
+<p>
+  <b>Interest:</b>
+  <%=h @loan.interest %>
+</p>
+
+<p>
+  <b>Rounding off:</b>
+  <%=h @loan.rounding_off %>
+</p>
+
+<p>
+  <b>Amount:</b>
+  <%=h @loan.amount %>
+</p>
+
+<p>
+  <b>Priority:</b>
+  <%=h @loan.priority %>
+</p>
+
+<p>
+  <b>Long term loan saction:</b>
+  <%=h @loan.long_term_loan_saction %>
+</p>
+
+<p>
+  <b>Deductions:</b>
+  <%=h @loan.deductions %>
+</p>
+
+<p>
+  <b>Net payable:</b>
+  <%=h @loan.net_payable %>
+</p>
+
+<p>
+  <b>Sun daughter wife of:</b>
+  <%=h @loan.sun_daughter_wife_of %>
+</p>
+
+<p>
+  <b>Resident address:</b>
+  <%=h @loan.resident_address %>
+</p>
+
+
+<%= link_to 'Edit', edit_loan_path(@loan) %> |
+<%= link_to 'Back', loans_path %>

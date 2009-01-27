@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  retirement_age: MyString
+  dearness_allowance: 1.5
+
+two:
+  retirement_age: MyString
+  dearness_allowance: 1.5

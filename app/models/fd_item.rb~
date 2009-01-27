@@ -1,0 +1,3 @@
+class FdItem < ActiveRecord::Base
+belongs_to :FixedDeposit
+end

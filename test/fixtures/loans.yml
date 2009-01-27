@@ -1,0 +1,63 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  no_of_shares_held: MyString
+  telephone_office: MyString
+  telephone_residence: MyString
+  basic_pay: 1.5
+  take_home_pay: 1.5
+  amount_of_loan_applied: MyString
+  purpose_of_loan: MyString
+  outstanding_loan: MyString
+  other_information: MyString
+  doj_society: 2009-01-09
+  applicant_mo_no: MyString
+  eligible_for: 1.5
+  no_of_existing_shares: MyString
+  no_of_shares_to_be_deducted: MyString
+  loan_no: MyString
+  loan_date: 2009-01-09
+  installments: MyString
+  share: MyString
+  entrance_fees: 1.5
+  long_term_loan_principle: MyString
+  interest: 1.5
+  rounding_off: MyString
+  amount: 1.5
+  priority: MyString
+  long_term_loan_saction: MyString
+  deductions: MyString
+  net_payable: MyString
+  sun_daughter_wife_of: MyString
+  resident_address: MyString
+
+two:
+  no_of_shares_held: MyString
+  telephone_office: MyString
+  telephone_residence: MyString
+  basic_pay: 1.5
+  take_home_pay: 1.5
+  amount_of_loan_applied: MyString
+  purpose_of_loan: MyString
+  outstanding_loan: MyString
+  other_information: MyString
+  doj_society: 2009-01-09
+  applicant_mo_no: MyString
+  eligible_for: 1.5
+  no_of_existing_shares: MyString
+  no_of_shares_to_be_deducted: MyString
+  loan_no: MyString
+  loan_date: 2009-01-09
+  installments: MyString
+  share: MyString
+  entrance_fees: 1.5
+  long_term_loan_principle: MyString
+  interest: 1.5
+  rounding_off: MyString
+  amount: 1.5
+  priority: MyString
+  long_term_loan_saction: MyString
+  deductions: MyString
+  net_payable: MyString
+  sun_daughter_wife_of: MyString
+  resident_address: MyString

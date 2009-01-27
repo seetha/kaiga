@@ -1,0 +1,51 @@
+<h1>Listing loans</h1>
+
+<table>
+  <tr>
+    <th>No of shares held</th>
+    <th>Amount of loan applied</th>
+    <th>Purpose of loan</th>
+    <th>Outstanding loan</th>
+    <th>Applicant mo no</th>
+    <th>Eligible for</th>
+    <th>No of existing shares</th>
+    <th>No of shares to be deducted</th>
+    <th>Loan no</th>
+    <th>Installments</th>
+    <th>Share</th>
+    <th>Interest</th>
+    <th>Rounding off</th>
+    <th>Amount</th>
+    <th>Deductions</th>
+    <th>Net payable</th>
+    
+  </tr>
+
+<% for loan in @loans %>
+  <tr>
+    <td><%=h loan.no_of_shares_held %></td>
+    <td><%=h loan.amount_of_loan_applied %></td>
+    <td><%=h loan.purpose_of_loan %></td>
+    <td><%=h loan.outstanding_loan %></td>
+    <td><%=h loan.applicant_mo_no %></td>
+    <td><%=h loan.eligible_for %></td>
+    <td><%=h loan.no_of_existing_shares %></td>
+    <td><%=h loan.no_of_shares_to_be_deducted %></td>
+    <td><%=h loan.loan_no %></td>
+    <td><%=h loan.installments %></td>
+    <td><%=h loan.share %></td>
+    <td><%=h loan.long_term_loan_principle %></td>
+    <td><%=h loan.interest %></td>
+    <td><%=h loan.amount %></td>
+    <td><%=h loan.deductions %></td>
+    <td><%=h loan.net_payable %></td>
+    <td><%= link_to 'Show', loan %></td>
+    <td><%= link_to 'Edit', edit_loan_path(loan) %></td>
+    <td><%= link_to 'Destroy', loan, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New loan', new_loan_path %>

@@ -1,0 +1,134 @@
+<h2>MEMBERSHIP APPLICATION FORM</h2>
+<div class="main-form">
+<table class="login-form">
+<tr>
+	<td>
+	Member Details
+</td>
+</tr>
+</table>
+<table class="form-div">
+<% form_for(@member) do |f| %>
+  <%= f.error_messages %>
+  <tr>
+    <th><label>CC Number</lable></th>
+    <td><%= f.text_field :cc_no %></td>
+  </tr>
+  <tr>
+    <th><label>EMP Number</lable></th>
+    <td><%= f.text_field :emp_no %></td>
+  </tr>
+   <tr>
+    <th><lable>Member No</lable></th>
+    <td><%= f.text_field :member_no %></td>
+  </tr>
+  <tr>
+    <th><lable>Name</lable></th>
+    <td><%= f.text_field :name %></td>
+  </tr>
+  <tr>
+    <th><lable>Designation</lable></th>
+    <td><%= f.text_field :designation %></td>
+  </tr>
+  <tr>
+    <th><lable>Section</lable></th>
+    <td><%= f.text_field :section %></td>
+  </tr>
+  <tr>
+    <th><lable>Station</lable></th>
+    <td><%= f.text_field :station %></td>
+  </tr>
+  <tr>
+    <th><label>DOB</lable></th>
+    <td><%= f.date_select :dob, :start_year => 1948, :end_year =>2009 %></td>
+  </tr>
+  <tr>
+    <th><label>DOJ NPC</lable></th>
+    <td><%= f.date_select :doj_npc,:start_year => 1948, :end_year =>2050 %></td>
+  </tr>
+  <tr>
+    <th><%= f.label :doj_kaiga %></th>
+    <td><%= f.date_select :doj_kaiga,:start_year => 1948, :end_year =>2009 %></td>
+  </tr>
+  <tr>
+    <th><label>Band Pay</lable></th>
+    <td><%= f.text_field :band_pay %></td>
+  </tr>
+  <tr>
+    <th><label>Grade Pay</lable></th>
+    <td><%= f.text_field :grade_pay %></td>
+  </tr>
+  <tr>
+    <th><label>Present Address</lable></th>
+    <td><%= f.text_field :present_address %></td>
+  </tr>
+  <tr>
+    <th><label>Permanent Address</lable></th>
+    <td><%= f.text_field :permanent_address %></td>
+  </tr>
+  <tr>
+    <th><label>Contact No</lable></th>
+    <td><%= f.text_field :contact_no %></td>
+  </tr>
+  <tr>
+    <th><label>Bank Account No</lable></th>
+    <td><%= f.text_field :account_no %></td>
+  </tr>
+  </table>
+  </div>
+  <div class="main-form1">
+  <table class="login-form">
+<tr>
+	<td>
+	Nominee Details
+</td>
+</tr>
+</table>
+  <table class="form-div" >
+  <tr>
+    <th><h3>first nominee details:</h3></th>
+    <td></td>
+  </tr>
+  <tr>
+    <th><lable>Nominee Name</lable></th>
+    <td><%= f.text_field :first_nominee_name %></td>
+  </tr>
+  <tr>
+    <th><lable>Nominee Name Relationship</lable></th>
+    <td><%= f.text_field :first_nominee_relationship %></td>
+  </tr>
+  <tr>
+    <th><lable>Nominee DOB</lable></th>
+    <td><%= f.date_select :first_nominee_dob,:start_year => 1948, :end_year =>2009  %></td>
+  </tr>
+    <tr>
+    <th><lable>Nominee Address</lable></th>
+    <td><%= f.text_field :first_nominee_address %></td>
+  </tr>
+  <tr>
+    <th><h3>second nominee details:</h3></th>
+    <td></td>
+  </tr>
+  <tr>
+    <th><lable>Nominee Name</lable></th>
+    <td><%= f.text_field :second_nominee_name %></td>
+  </tr>
+  <tr>
+    <th><lable>Nominee Name Relationship</lable></th>
+    <td><%= f.text_field :second_nominee_relationship %></td>
+  </tr>
+  <tr>
+    <th><lable>Nominee DOB</lable></th>
+    <td><%= f.date_select :second_nominee_dob,:start_year => 1948, :end_year =>2009 %></td>
+  </tr>
+  <tr>
+    <th><lable>Nominee Address</lable></th>
+    <td><%= f.text_field :second_nominee_address %></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><%= f.submit "Next" %></td>
+  </tr>
+  </table>
+<% end %>
+</div>

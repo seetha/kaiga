@@ -1,0 +1,28 @@
+<p>
+  <b>Calculated date:</b>
+  <%=h @subscription_detail.calculated_date %>
+</p>
+
+<p>
+  <b>Interest month:</b>
+  <%=h @subscription_detail.interest_month %>
+</p>
+
+<p>
+  <b>Subscription amount:</b>
+  <%=h @subscription_detail.subscription_amount %>
+</p>
+
+<p>
+  <b>Interest amount:</b>
+  <%=h @subscription_detail.interest_amount %>
+</p>
+
+<p>
+  <b>Accrued amount:</b>
+  <%=h @subscription_detail.accrued_amount %>
+</p>
+
+
+<%= link_to 'Edit', edit_subscription_detail_path(@subscription_detail) %> |
+<%= link_to 'Back', subscription_details_path %>

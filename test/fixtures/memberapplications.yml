@@ -1,0 +1,65 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  cc_no: MyString
+  emp_no: MyString
+  photo_id: MyString
+  member_no: MyString
+  name: MyString
+  designation: MyString
+  section: MyString
+  station: MyString
+  dob: 2009-01-09
+  age: MyString
+  doj_npc: 2009-01-09
+  doj_kaiga: 2009-01-09
+  no_year_of_service: MyString
+  date_of_retirement: 2009-01-09
+  band_pay: MyString
+  grade_pay: MyString
+  present_address: MyString
+  permanent_address: MyString
+  contact_no: MyString
+  account_no: MyString
+  first_nominee_name: MyString
+  first_nominee_relationship: MyString
+  first_nominee_dob: 2009-01-09
+  first_nominee_age: MyString
+  first_nominee_address: MyString
+  second_nominee_name: MyString
+  second_nominee_relationship: MyString
+  second_nominee_dob: 2009-01-09
+  second_nominee_age: MyString
+  second_nominee_address: MyString
+
+two:
+  cc_no: MyString
+  emp_no: MyString
+  photo_id: MyString
+  member_no: MyString
+  name: MyString
+  designation: MyString
+  section: MyString
+  station: MyString
+  dob: 2009-01-09
+  age: MyString
+  doj_npc: 2009-01-09
+  doj_kaiga: 2009-01-09
+  no_year_of_service: MyString
+  date_of_retirement: 2009-01-09
+  band_pay: MyString
+  grade_pay: MyString
+  present_address: MyString
+  permanent_address: MyString
+  contact_no: MyString
+  account_no: MyString
+  first_nominee_name: MyString
+  first_nominee_relationship: MyString
+  first_nominee_dob: 2009-01-09
+  first_nominee_age: MyString
+  first_nominee_address: MyString
+  second_nominee_name: MyString
+  second_nominee_relationship: MyString
+  second_nominee_dob: 2009-01-09
+  second_nominee_age: MyString
+  second_nominee_address: MyString

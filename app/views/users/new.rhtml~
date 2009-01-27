@@ -1,0 +1,41 @@
+<% @user.password = @user.password_confirmation = nil %>
+
+<% content_for :header do -%>
+Create a new <%= configatron.site_name %> account
+<% end -%>
+
+<% form_for :user,@typeid,,:url => users_path(:link_id=>@link_id),:html=>{:method=>:put} do |f| -%>
+	<%= error_messages_for :user %>	
+	<fieldset id="oldfashioned_form">	
+		<legend>Your Details</legend>
+        <p><label for="real_name">Name</label><br/>
+ <%= f.text_field :real_name %></p>
+
+<p><label for="contact_no">Contact Number</label><br/>
+<%= f.text_field :contact_no %></p>
+
+<p><label for="location">Location</label><br/>
+<%= f.text_field :location %></p>
+        
+		<p><label for="login">Login</label><br/>
+		<%= f.text_field :login %></p>
+
+		<p><label for="email">Email</label><br/>
+		<%= f.text_field :email %></p>
+
+		<p><label for="password">Password</label><br/>
+		<%= f.password_field :password %></p>
+
+		<p><label for="password_confirmation">Confirm Password</label><br/>
+		<%= f.password_field :password_confirmation %></p>
+				
+	</fieldset>
+	
+	<ul>
+		<li><%= link_to "Already signed up? Login now!", login_url %></li>
+	</ul>
+	
+	<div id="submitbutton">
+		<p><%= submit_tag 'Sign up' %></p>
+	</div>
+<% end %>

@@ -1,0 +1,27 @@
+<h1>New subscription</h1>
+
+<% form_for(@subscription) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :member_id %><br />
+    <%=f.select :member_id,all_members%>
+  </p>
+  <p>
+    <%= f.label :subscription_amount %><br />
+    <%= f.text_field :subscription_amount %>
+  </p>
+  <p>
+    <%= f.label :cumulative_subscription %><br />
+    <%= f.text_field :cumulative_subscription %>
+  </p>
+  <p>
+    <%= f.label :subscription_type %><br />
+    <%=f.select :subscription_type,all_subscriptiontype%>
+  </p>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', subscriptions_path %>

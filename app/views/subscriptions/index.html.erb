@@ -1,0 +1,26 @@
+<h1>Listing subscriptions</h1>
+
+<table>
+  <tr>
+    <th>Member</th>
+    <th>Subscription amount</th>
+    <th>Cumulative subscription</th>
+    <th>Subscription type</th>
+  </tr>
+
+<% for subscription in @subscriptions %>
+  <tr>
+    <td><%=h subscription.member_id %></td>
+    <td><%=h subscription.subscription_amount %></td>
+    <td><%=h subscription.cumulative_subscription %></td>
+    <td><%=h subscription.subscription_type %></td>
+    <td><%= link_to 'Show', subscription %></td>
+    <td><%= link_to 'Edit', edit_subscription_path(subscription) %></td>
+    <td><%= link_to 'Destroy', subscription, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New subscription', new_subscription_path %>

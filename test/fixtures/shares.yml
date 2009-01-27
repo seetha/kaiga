@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  share_certificate_number: MyString
+  share_issue_date: 2009-01-12
+  number_of_shares: MyString
+  total_value: MyString
+
+two:
+  share_certificate_number: MyString
+  share_issue_date: 2009-01-12
+  number_of_shares: MyString
+  total_value: MyString

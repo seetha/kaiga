@@ -1,0 +1,23 @@
+<p>
+  <b>Subscription type:</b>
+  <%=h @subscription_setting.subscription_type %>
+</p>
+
+<p>
+  <b>Interest rate:</b>
+  <%=h @subscription_setting.interest_rate %>
+</p>
+
+<p>
+  <b>Calculated:</b>
+  <%=h @subscription_setting.calculated %>
+</p>
+
+<p>
+  <b>Compounded:</b>
+  <%=h @subscription_setting.compounded %>
+</p>
+
+
+<%= link_to 'Edit', edit_subscription_setting_path(@subscription_setting) %> |
+<%= link_to 'Back', subscription_settings_path %>

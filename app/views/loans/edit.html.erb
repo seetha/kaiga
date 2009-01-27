@@ -1,0 +1,120 @@
+<h1>Editing loan</h1>
+
+<% form_for(@loan) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :no_of_shares_held %><br />
+    <%= f.text_field :no_of_shares_held %>
+  </p>
+  <p>
+    <%= f.label :telephone_office %><br />
+    <%= f.text_field :telephone_office %>
+  </p>
+  <p>
+    <%= f.label :telephone_residence %><br />
+    <%= f.text_field :telephone_residence %>
+  </p>
+  <p>
+    <%= f.label :basic_pay %><br />
+    <%= f.text_field :basic_pay %>
+  </p>
+  <p>
+    <%= f.label :take_home_pay %><br />
+    <%= f.text_field :take_home_pay %>
+  </p>
+  <p>
+    <%= f.label :amount_of_loan_applied %><br />
+    <%= f.text_field :amount_of_loan_applied %>
+  </p>
+  <p>
+    <%= f.label :purpose_of_loan %><br />
+    <%= f.text_field :purpose_of_loan %>
+  </p>
+  <p>
+    <%= f.label :outstanding_loan %><br />
+    <%= f.text_field :outstanding_loan %>
+  </p>
+  <p>
+    <%= f.label :other_information %><br />
+    <%= f.text_field :other_information %>
+  </p>
+  <p>
+    <%= f.label :doj_society %><br />
+    <%= f.date_select :doj_society %>
+  </p>
+  <p>
+    <%= f.label :applicant_mo_no %><br />
+    <%= f.text_field :applicant_mo_no %>
+  </p>
+  <p>
+    <%= f.label :eligible_for %><br />
+    <%= f.text_field :eligible_for %>
+  </p>
+  <p>
+    <%= f.label :no_of_existing_shares %><br />
+    <%= f.text_field :no_of_existing_shares %>
+  </p>
+  <p>
+    <%= f.label :no_of_shares_to_be_deducted %><br />
+    <%= f.text_field :no_of_shares_to_be_deducted %>
+  </p>
+  <p>
+    <%= f.label :loan_no %><br />
+    <%= f.text_field :loan_no %>
+  </p>
+  <p>
+    <%= f.label :loan_date %><br />
+    <%= f.date_select :loan_date %>
+  </p>
+  <p>
+    <%= f.label :installments %><br />
+    <%= f.text_field :installments %>
+  </p>
+  <p>
+    <%= f.label :share %><br />
+    <%= f.text_field :share %>
+  </p>
+  <p>
+    <%= f.label :entrance_fees %><br />
+    <%= f.text_field :entrance_fees %>
+  </p>
+  <p>
+    <%= f.label :long_term_loan_principle %><br />
+    <%= f.text_field :long_term_loan_principle %>
+  </p>
+  <p>
+    <%= f.label :interest %><br />
+    <%= f.text_field :interest %>
+  </p>
+  <p>
+    <%= f.label :rounding_off %><br />
+    <%= f.text_field :rounding_off %>
+  </p>
+  <p>
+    <%= f.label :amount %><br />
+    <%= f.text_field :amount %>
+  </p>
+  <p>
+    <%= f.label :priority %><br />
+    <%= f.text_field :priority %>
+  </p>
+  <p>
+    <%= f.label :long_term_loan_saction %><br />
+    <%= f.text_field :long_term_loan_saction %>
+  </p>
+  <p>
+    <%= f.label :deductions %><br />
+    <%= f.text_field :deductions %>
+  </p>
+  <p>
+    <%= f.label :net_payable %><br />
+    <%= f.text_field :net_payable %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @loan %> |
+<%= link_to 'Back', loans_path %>

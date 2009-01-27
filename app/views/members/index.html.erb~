@@ -1,0 +1,42 @@
+<h1>Listing members</h1>
+
+<table>
+  <tr>
+    <th>Emp no</th>
+    <th>Member no</th>
+    <th>Name</th>
+    <th>Designation</th>
+    <th>Section</th>
+    <th>Station</th>
+    <th>Dob</th>
+    <th>Age</th>
+    <th>DOR</th>
+    <th>Present address</th>
+    <th>Contact no</th>
+    <th>Account no</th>
+   </tr>
+
+<% for member in @members %>
+  <tr>
+    <td><%=h member.emp_no %></td>
+    <td><%=h member.member_no %></td>
+    <td><%=h member.name %></td>
+    <td><%=h member.designation %></td>
+    <td><%=h member.section %></td>
+    <td><%=h member.station %></td>
+    <td><%=h member.dob %></td>
+    <td><%=h member.age %></td>
+    <td><%=h member.date_of_retirement %></td> 
+    <td><%=h member.present_address %></td>
+    <td><%=h member.contact_no %></td>
+    <td><%=h member.account_no %></td>
+    <td><%= link_to 'Show', member %></td>
+    <td><%= link_to 'Edit', edit_member_path(member) %></td>
+    <td><%= link_to 'Destroy', member, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New member', new_member_path %>

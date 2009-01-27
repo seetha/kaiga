@@ -1,0 +1,14 @@
+<ul>
+	<% if Setting.count > 0 %>
+	<li style="float: right;"><%= tab_to "Settings", [{:controller => "admin/settings"}] %></li>
+	<% end %>
+       
+	<li style="float: right;"><%= tab_to "All Users", [{:controller => "admin/users"}] %></li>		
+	<li><%= tab_to "Dashboard", [{:controller => "admin/dashboard"}] %></li>
+        <li><%= link_to "Member", members_path%></li>
+        <li><%= link_to "Loan", loans_path %></li>
+        <li><%= link_to "Fixed Deposit", fixed_deposits_path %></li>
+        <li><%= link_to "Subscription Details", subscription_details_path %></li>
+        <li><%= link_to "Subscription", subscriptions_path %></li>
+        <li><%= link_to "Subscription Settings", subscription_settings_path %></li>
+</ul>

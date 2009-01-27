@@ -1,0 +1,43 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  rno: MyString
+  memno: MyString
+  name: MyString
+  designation: MyString
+  ccno: MyString
+  dob: 2008-12-31
+  age: MyString
+  doj_in_kaiga: 2008-12-31
+  doj_in_dae: 2008-12-31
+  resaddress: MyString
+  name_nominee: MyString
+  relationship_nominee: MyString
+  dob_nominee: 2008-12-31
+  age_nominee: MyString
+  nominee_address: MyString
+  no_of_shares: MyString
+  monthly_subscription: MyString
+  acnumber: MyString
+  station_date: 2008-12-31
+
+two:
+  rno: MyString
+  memno: MyString
+  name: MyString
+  designation: MyString
+  ccno: MyString
+  dob: 2008-12-31
+  age: MyString
+  doj_in_kaiga: 2008-12-31
+  doj_in_dae: 2008-12-31
+  resaddress: MyString
+  name_nominee: MyString
+  relationship_nominee: MyString
+  dob_nominee: 2008-12-31
+  age_nominee: MyString
+  nominee_address: MyString
+  no_of_shares: MyString
+  monthly_subscription: MyString
+  acnumber: MyString
+  station_date: 2008-12-31

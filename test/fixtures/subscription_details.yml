@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  subscriptiondate: 2009-01-12
+  intrest: MyString
+  accrued_amount: 1.5
+
+two:
+  subscriptiondate: 2009-01-12
+  intrest: MyString
+  accrued_amount: 1.5

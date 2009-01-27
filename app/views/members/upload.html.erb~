@@ -1,0 +1,8 @@
+<br/>
+<div class=uploadtext><h3>Upload Image:</h3></div>
+  <div class="upload"><img src='/images/upload.gif'></div><br/><br/><br/><br/>
+    <% form_for :upload, :url => uploadimage_members_path, :html => {:method=>:post,:multipart => true } do |form| %>
+      <%= form.file_field :avatar %>
+      <%=submit_tag "submit"%>
+      <%=button_to "Cancel"%>
+    <% end %>

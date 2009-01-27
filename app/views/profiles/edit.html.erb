@@ -1,0 +1,28 @@
+<% if @user.nil? -%>
+	<% content_for :header do -%>
+		Profile not be found
+	<% end -%>
+	
+	<p>The profile you requested does not exist.</p>
+<% else -%>
+	<% content_for :header do -%>
+		Editing my profile
+	<% end -%>
+	<br />
+	
+    <%= error_messages_for :user %>
+	
+	<%= render :partial => 'profiles/my_account' if current_user == @user %>
+	
+	<% form_for :profile, @user, :url => profile_url(@user), :html => {:method => :put} do |f| %>
+	
+	<% @user.profile_attributes.each do |column| -%>
+		<p><label><%= column.humanize %></label><br />
+		<%= input "user", "#{column}", :value => @user.send(column) %>
+		</p>
+	<% end -%>
+	
+	<%= submit_tag "Save changes" %>
+	
+	<% end %>
+<% end -%>

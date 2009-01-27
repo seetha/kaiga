@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  type: MyString
+  interest_rate: 1.5
+  calculated: 1
+  compounded: 1
+
+two:
+  type: MyString
+  interest_rate: 1.5
+  calculated: 1
+  compounded: 1

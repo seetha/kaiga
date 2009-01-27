@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  payment_date: 2009-01-19
+  begining_balance: 1.5
+  scheduled_payment: 1.5
+  principal: 1.5
+  interest: 1.5
+  ending_balance: 1.5
+
+two:
+  payment_date: 2009-01-19
+  begining_balance: 1.5
+  scheduled_payment: 1.5
+  principal: 1.5
+  interest: 1.5
+  ending_balance: 1.5

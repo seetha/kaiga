@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  fddetaidate: 2009-01-12
+  intrest: 1.5
+  amount: 1.5
+
+two:
+  fddetaidate: 2009-01-12
+  intrest: 1.5
+  amount: 1.5

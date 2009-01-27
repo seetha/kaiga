@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  type: 1
+  annual_interest_rate: 1.5
+  dearness_allowance: 1.5
+
+two:
+  type: 1
+  annual_interest_rate: 1.5
+  dearness_allowance: 1.5

@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  memberapplication_id: 1
+  subscription_amount: 1.5
+  cumulative_subscription: 1.5
+
+two:
+  memberapplication_id: 1
+  subscription_amount: 1.5
+  cumulative_subscription: 1.5

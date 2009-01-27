@@ -1,0 +1,126 @@
+<h1>New loan</h1>
+<center>
+<table>
+
+<% form_for(@loan) do |f| %>
+  <%= f.error_messages %>
+
+  <tr>
+    <td>Number of shares held</td>
+    <td><%= f.text_field :no_of_shares_held %></td>
+  </tr>
+  <tr>
+    <td>Telephone office</td>
+    <td><%= f.text_field :telephone_office %></td>
+  </tr>
+  <tr>
+    <td>Telephone residence</td>
+    <td><%= f.text_field :telephone_residence %></td>
+  </tr>
+  <tr>
+    <td>Basic pay</td>
+    <td><%= f.text_field :basic_pay %></td>
+  </tr>
+  <tr>
+    <td>Take home pay</td>
+    <td><%= f.text_field :take_home_pay %></td>
+  </tr>
+  <tr>
+    <td>Amount of loan applied</td>
+    <td><%= f.text_field :amount_of_loan_applied %></td>
+  </tr>
+  <tr>
+    <td>Purpose of loan</td>
+    <td><%= f.text_field :purpose_of_loan %></td>
+  </tr>
+  <tr>
+    <td>Outstanding loan</td>
+    <td><%= f.text_field :outstanding_loan %></td>
+  </tr>
+  <tr>
+    <td>Other_information</td>
+    <td><%= f.text_field :other_information %></td>
+  </tr>
+  <tr>
+    <td>Date of joining to society</td>
+    <td><%= f.date_select :doj_society %></td>
+  </tr>
+  <tr>
+    <td>Applicant mo number</td>
+    <td><%= f.text_field :applicant_mo_no %></td>
+  </tr>
+  <tr>
+    <td>Eligible for</td>
+    <td><%= f.text_field :eligible_for %></td>
+  </tr>
+  <tr>
+    <td>Number of existing shares</td>
+    <td><%= f.text_field :no_of_existing_shares %></td>
+  </tr>
+  <tr>
+    <td>Number of shares to be deducted</td>
+    <td><%= f.text_field :no_of_shares_to_be_deducted %></td>
+  </tr>
+  <tr>
+    <td>Loan number</td>
+    <td><%= f.text_field :loan_no %></td>
+  </tr>
+  <tr>
+    <td>Loan date</td>
+    <td><%= f.date_select :loan_date %></td>
+  </tr>
+  <tr>
+    <td>Installments</td>
+    <td><%= f.text_field :installments %></td>
+  </tr>
+  <tr>
+    <td>Share</td>
+    <td><%= f.text_field :share %></td>
+  </tr>
+  <tr>
+    <td>Entrance fees</td>
+    <td><%= f.text_field :entrance_fees %></td>
+  </tr>
+  <tr>
+    <td>Long term loan principle</td>
+    <td><%= f.text_field :long_term_loan_principle %></td>
+  </tr>
+  <tr>
+    <td>Interest</td>
+    <td><%= f.text_field :interest %></td>
+  </tr>
+  <tr>
+    <td>Rounding off</td>
+    <td><%= f.text_field :rounding_off %></td>
+  </tr>
+  <tr>
+    <td>Amount</td>
+    <td><%= f.text_field :amount %></td>
+  </tr>
+  <tr>
+    <td>Priority</td>
+    <td><%= f.text_field :priority %></td>
+  </tr>
+  <tr>
+    <td>Long term loan saction</td>
+    <td><%= f.text_field :long_term_loan_saction %></td>
+  </tr>
+  <tr>
+    <td>Deductions</td>
+    <td><%= f.text_field :deductions %></td>
+  </tr>
+  <tr>
+    <td>Net payable</td>
+    <td><%= f.text_field :net_payable %></td>
+  </tr>
+ 
+  <tr>
+  <td></td> 
+  <td> <%= f.submit "Create" %></td> 
+   </tr>
+  
+<% end %>
+</table>
+</center>
+
+<%= link_to 'Back', loans_path %>

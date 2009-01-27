@@ -1,0 +1,3 @@
+class Doctor < User
+has_many :appointment_slots
+end

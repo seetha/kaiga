@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  doctor_id: 1
+  day: 2008-11-19
+  from_time: 2008-11-19 12:24:00
+  to_time: 2008-11-19 12:24:00
+  patient_id: 1
+  sort_id: 1
+
+two:
+  doctor_id: 1
+  day: 2008-11-19
+  from_time: 2008-11-19 12:24:00
+  to_time: 2008-11-19 12:24:00
+  patient_id: 1
+  sort_id: 1

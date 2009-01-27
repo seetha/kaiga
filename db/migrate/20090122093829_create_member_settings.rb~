@@ -1,0 +1,14 @@
+class CreateMemberSettings < ActiveRecord::Migration
+  def self.up
+    create_table :member_settings do |t|
+      t.string :retirement_age, :default => 60
+      t.float :dearness_allowance, :default => 6.5
+
+      t.timestamps
+    end
+  end
+
+  def self.down
+    drop_table :member_settings
+  end
+end

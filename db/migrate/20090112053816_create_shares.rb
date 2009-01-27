@@ -1,0 +1,16 @@
+class CreateShares < ActiveRecord::Migration
+  def self.up
+    create_table :shares do |t|
+      t.string :share_certificate_number
+      t.date :share_issue_date
+      t.string :number_of_shares
+      t.string :total_value
+      t.string :type
+      t.timestamps
+    end
+  end
+
+  def self.down
+    drop_table :shares
+  end
+end

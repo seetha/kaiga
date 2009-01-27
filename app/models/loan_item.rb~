@@ -1,0 +1,2 @@
+class LoanItem < ActiveRecord::Base
+end

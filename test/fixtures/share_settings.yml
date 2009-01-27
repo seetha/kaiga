@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  certificate_cost: 1.5
+  share_value: 1.5
+  entrance_fee: 1.5
+
+two:
+  certificate_cost: 1.5
+  share_value: 1.5
+  entrance_fee: 1.5

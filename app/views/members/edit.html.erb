@@ -1,0 +1,132 @@
+<h1>Editing member</h1>
+
+<% form_for(@member) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :cc_no %><br />
+    <%= f.text_field :cc_no %>
+  </p>
+  <p>
+    <%= f.label :emp_no %><br />
+    <%= f.text_field :emp_no %>
+  </p>
+  <p>
+    <%= f.label :photo_id %><br />
+    <%= f.text_field :photo_id %>
+  </p>
+  <p>
+    <%= f.label :member_no %><br />
+    <%= f.text_field :member_no %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :designation %><br />
+    <%= f.text_field :designation %>
+  </p>
+  <p>
+    <%= f.label :section %><br />
+    <%= f.text_field :section %>
+  </p>
+  <p>
+    <%= f.label :station %><br />
+    <%= f.text_field :station %>
+  </p>
+  <p>
+    <%= f.label :dob %><br />
+    <%= f.date_select :dob %>
+  </p>
+  <p>
+    <%= f.label :age %><br />
+    <%= f.text_field :age %>
+  </p>
+  <p>
+    <%= f.label :doj_npc %><br />
+    <%= f.date_select :doj_npc %>
+  </p>
+  <p>
+    <%= f.label :doj_kaiga %><br />
+    <%= f.date_select :doj_kaiga %>
+  </p>
+  <p>
+    <%= f.label :no_of_years_of_service %><br />
+    <%= f.text_field :no_of_years_of_service %>
+  </p>
+  <p>
+    <%= f.label :date_of_retirement %><br />
+    <%= f.date_select :date_of_retirement %>
+  </p>
+  <p>
+    <%= f.label :band_pay %><br />
+    <%= f.text_field :band_pay %>
+  </p>
+  <p>
+    <%= f.label :grade_pay %><br />
+    <%= f.text_field :grade_pay %>
+  </p>
+  <p>
+    <%= f.label :present_address %><br />
+    <%= f.text_field :present_address %>
+  </p>
+  <p>
+    <%= f.label :permanent_address %><br />
+    <%= f.text_field :permanent_address %>
+  </p>
+  <p>
+    <%= f.label :contact_no %><br />
+    <%= f.text_field :contact_no %>
+  </p>
+  <p>
+    <%= f.label :account_no %><br />
+    <%= f.text_field :account_no %>
+  </p>
+  <p>
+    <%= f.label :first_nominee_name %><br />
+    <%= f.text_field :first_nominee_name %>
+  </p>
+  <p>
+    <%= f.label :first_nominee_relationship %><br />
+    <%= f.text_field :first_nominee_relationship %>
+  </p>
+  <p>
+    <%= f.label :first_nominee_dob %><br />
+    <%= f.date_select :first_nominee_dob %>
+  </p>
+  <p>
+    <%= f.label :first_nominee_age %><br />
+    <%= f.text_field :first_nominee_age %>
+  </p>
+  <p>
+    <%= f.label :first_nominee_address %><br />
+    <%= f.text_field :first_nominee_address %>
+  </p>
+  <p>
+    <%= f.label :second_nominee_name %><br />
+    <%= f.text_field :second_nominee_name %>
+  </p>
+  <p>
+    <%= f.label :second_nominee_relationship %><br />
+    <%= f.text_field :second_nominee_relationship %>
+  </p>
+  <p>
+    <%= f.label :second_nominee_dob %><br />
+    <%= f.date_select :second_nominee_dob %>
+  </p>
+  <p>
+    <%= f.label :second_nominee_age %><br />
+    <%= f.text_field :second_nominee_age %>
+  </p>
+  <p>
+    <%= f.label :second_nominee_address %><br />
+    <%= f.text_field :second_nominee_address %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @member %> |
+<%= link_to 'Back', members_path %>

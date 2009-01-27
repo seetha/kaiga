@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  son_daughter_wife_of: MyString
+  resident_address: MyString
+  fdopen_date: 2009-01-12
+  name: MyString
+  age: MyString
+  father_husband: MyString
+  relationship_with_member: MyString
+  type: MyString
+
+two:
+  son_daughter_wife_of: MyString
+  resident_address: MyString
+  fdopen_date: 2009-01-12
+  name: MyString
+  age: MyString
+  father_husband: MyString
+  relationship_with_member: MyString
+  type: MyString

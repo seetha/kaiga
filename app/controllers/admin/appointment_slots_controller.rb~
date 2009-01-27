@@ -1,0 +1,93 @@
+class Admin::AppointmentSlotsController < ApplicationController
+layout 'admin'
+  # GET /admin_appointment_slots
+  # GET /appointment_slots.xml
+  def index
+   @doctor = Doctor.find(params[:doctor_id])
+   @appointment_slots = @doctor.appointment_slots.find(:all)
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @appointment_slots }
+    end
+  end
+
+  # GET /admin_appointment_slots/1
+  # GET /appointment_slots/1.xml
+  def show
+    @appointment_slot = AppointmentSlot.find(params[:id])
+    @doctor = Doctor.find(params[:doctor_id])
+    
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml  { render :xml => @appointment_slot }
+    end
+  end
+
+  # GET /admin_appointment_slots/new
+  # GET /appointment_slots/new.xml
+  def new
+    @days = ApplicationController::Arr
+    @appointment_slot = AppointmentSlot.new
+    @doctor = Doctor.find(params[:doctor_id])
+   
+    respond_to do |format|
+      format.html # new.html.erb
+      format.xml  { render :xml => @appointment_slot }
+    end
+  end
+
+  # GET /admin_appointment_slots/1/edit
+  def edit
+    @appointment_slot = AppointmentSlot.find(params[:id])
+    @doctor = Doctor.find(params[:doctor_id])
+    @days = ApplicationController::Arr
+  end
+
+  # POST /admin_appointment_slots
+  # POST /appointment_slots.xml
+  def create
+    @appointment_slot = AppointmentSlot.new(params[:appointment_slot])
+    @doctor = Doctor.find(params[:doctor_id])
+     @appointment_slot.doctor_id = params[:doctor_id]
+    respond_to do |format|
+      if @appointment_slot.save
+        flash[:notice] = 'AppointmentSlot was successfully created.'
+        format.html { redirect_to(admin_doctor_appointment_slot_path(@doctor,@appointment_slot)) }
+        format.xml  { render :xml => @appointment_slot, :status => :created, :location => @appointment_slot }
+      else
+        format.html { render :action => "new" }
+        format.xml  { render :xml => @appointment_slot.errors, :status => :unprocessable_entity }
+      end
+    end
+  end
+
+  # PUT /admin_appointment_slots/1
+  # PUT /appointment_slots/1.xml
+  def update
+    @appointment_slot = AppointmentSlot.find(params[:id])
+    @doctor = Doctor.find(params[:doctor_id])
+    respond_to do |format|
+      if @appointment_slot.update_attributes(params[:appointment_slot])
+        flash[:notice] = 'AppointmentSlot was successfully updated.'
+        format.html { redirect_to(admin_doctor_appointment_slot_url(@doctor,@appointment_slot))}
+        format.xml  { head :ok }
+      else
+        format.html { render :action => "edit" }
+        format.xml  { render :xml => @appointment_slot.errors, :status => :unprocessable_entity }
+      end
+    end
+  end
+
+  # DELETE /appointment_slots/1
+  # DELETE /appointment_slots/1.xml
+  def destroy
+    @doctor = Doctor.find(params[:doctor_id])
+    @appointment_slot = AppointmentSlot.find(params[:id])
+    @appointment_slot.destroy
+    
+    respond_to do |format|
+      format.html { redirect_to(admin_doctor_appointment_slots_path(@doctor)) }
+      format.xml  { head :ok }
+    end
+  end
+end

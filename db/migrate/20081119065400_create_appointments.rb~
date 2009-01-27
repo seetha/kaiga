@@ -1,0 +1,18 @@
+class CreateAppointments < ActiveRecord::Migration
+  def self.up
+    create_table :appointments do |t|
+      t.integer :doctor_id
+      t.date :day
+      t.time :from_time
+      t.time :to_time
+      t.integer :patient_id
+      t.integer :sort_id
+
+      t.timestamps
+    end
+  end
+
+  def self.down
+    drop_table :appointments
+  end
+end

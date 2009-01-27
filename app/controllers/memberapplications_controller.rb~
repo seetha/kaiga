@@ -1,0 +1,85 @@
+class MemberapplicationsController < ApplicationController
+  # GET /memberapplications
+  # GET /memberapplications.xml
+  def index
+    @memberapplications = Memberapplication.find(:all)
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @memberapplications }
+    end
+  end
+
+  # GET /memberapplications/1
+  # GET /memberapplications/1.xml
+  def show
+    @memberapplication = Memberapplication.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml  { render :xml => @memberapplication }
+    end
+  end
+
+  # GET /memberapplications/new
+  # GET /memberapplications/new.xml
+  def new
+    @memberapplication = Memberapplication.new
+
+    respond_to do |format|
+      format.html # new.html.erb
+      format.xml  { render :xml => @memberapplication }
+    end
+  end
+
+  # GET /memberapplications/1/edit
+  def edit
+    @memberapplication = Memberapplication.find(params[:id])
+  end
+
+  # POST /memberapplications
+  # POST /memberapplications.xml
+  def create
+    @memberapplication = Memberapplication.new(params[:memberapplication])
+
+    respond_to do |format|
+      if @memberapplication.save
+        flash[:notice] = 'Memberapplication was successfully created.'
+        format.html { redirect_to(@memberapplication) }
+        format.xml  { render :xml => @memberapplication, :status => :created, :location => @memberapplication }
+      else
+        format.html { render :action => "new" }
+        format.xml  { render :xml => @memberapplication.errors, :status => :unprocessable_entity }
+      end
+    end
+  end
+
+  # PUT /memberapplications/1
+  # PUT /memberapplications/1.xml
+  def update
+    @memberapplication = Memberapplication.find(params[:id])
+
+    respond_to do |format|
+      if @memberapplication.update_attributes(params[:memberapplication])
+        flash[:notice] = 'Memberapplication was successfully updated.'
+        format.html { redirect_to(@memberapplication) }
+        format.xml  { head :ok }
+      else
+        format.html { render :action => "edit" }
+        format.xml  { render :xml => @memberapplication.errors, :status => :unprocessable_entity }
+      end
+    end
+  end
+
+  # DELETE /memberapplications/1
+  # DELETE /memberapplications/1.xml
+  def destroy
+    @memberapplication = Memberapplication.find(params[:id])
+    @memberapplication.destroy
+
+    respond_to do |format|
+      format.html { redirect_to(memberapplications_url) }
+      format.xml  { head :ok }
+    end
+  end
+end

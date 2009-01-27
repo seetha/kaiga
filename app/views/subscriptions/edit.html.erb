@@ -1,0 +1,28 @@
+<h1>Editing subscription</h1>
+
+<% form_for(@subscription) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :member_id %><br />
+    <%= f.text_field :member_id %>
+  </p>
+  <p>
+    <%= f.label :subscription_amount %><br />
+    <%= f.text_field :subscription_amount %>
+  </p>
+  <p>
+    <%= f.label :cumulative_subscription %><br />
+    <%= f.text_field :cumulative_subscription %>
+  </p>
+  <p>
+    <%= f.label :subscription_type %><br />
+    <%= f.text_field :subscription_type %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @subscription %> |
+<%= link_to 'Back', subscriptions_path %>

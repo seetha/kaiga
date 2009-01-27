@@ -1,0 +1,23 @@
+<p>
+  <b>Member:</b>
+  <%=h @subscription.member_id %>
+</p>
+
+<p>
+  <b>Subscription amount:</b>
+  <%=h @subscription.subscription_amount %>
+</p>
+
+<p>
+  <b>Cumulative subscription:</b>
+  <%=h @subscription.cumulative_subscription %>
+</p>
+
+<p>
+  <b>Subscription type:</b>
+  <%=h @subscription.subscription_type %>
+</p>
+
+
+<%= link_to 'Edit', edit_subscription_path(@subscription) %> |
+<%= link_to 'Back', subscriptions_path %>

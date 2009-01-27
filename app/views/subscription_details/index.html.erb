@@ -1,0 +1,28 @@
+<h1>Listing subscription_details</h1>
+
+<table>
+  <tr>
+    <th>Calculated date</th>
+    <th>Interest month</th>
+    <th>Subscription amount</th>
+    <th>Interest amount</th>
+    <th>Accrued amount</th>
+  </tr>
+
+<% for subscription_detail in @subscription_details %>
+  <tr>
+    <td><%=h subscription_detail.calculated_date %></td>
+    <td><%=h subscription_detail.interest_month %></td>
+    <td><%=h subscription_detail.subscription_amount %></td>
+    <td><%=h subscription_detail.interest_amount %></td>
+    <td><%=h subscription_detail.accrued_amount %></td>
+    <td><%= link_to 'Show', subscription_detail %></td>
+    <td><%= link_to 'Edit', edit_subscription_detail_path(subscription_detail) %></td>
+    <td><%= link_to 'Destroy', subscription_detail, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New subscription_detail', new_subscription_detail_path %>

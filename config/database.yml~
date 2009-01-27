@@ -1,0 +1,20 @@
+development:
+  adapter: mysql
+  encoding: utf8
+  database: kaiga_development
+  username: root
+  password: isiri
+  host: 127.0.0.1
+  
+  
+test:
+  adapter: mysql
+  encoding: utf8
+  database: accounting_test
+  username: root
+  password: isiri
+  # JRuby doesn't support # JRuby doesn't support socket:
+                          #socket:
+  host: 127.0.0.1
+  ## JRuby doesn't support socket:
+   #socket: /var/run/mysqld/mysqld.sock

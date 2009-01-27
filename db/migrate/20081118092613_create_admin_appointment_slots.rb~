@@ -1,0 +1,17 @@
+class CreateAdminAppointmentSlots < ActiveRecord::Migration
+  def self.up
+    create_table :appointment_slots do |t|
+      t.integer :doctor_id
+      t.integer :day
+      t.integer :no_of_patients_per_hour
+      t.time :start_time
+      t.time :end_time
+
+      t.timestamps
+    end
+  end
+
+  def self.down
+    drop_table :appointment_slots
+  end
+end

@@ -1,0 +1,26 @@
+<h1>Listing subscription_settings</h1>
+
+<table>
+  <tr>
+    <th>Subscription type</th>
+    <th>Interest rate</th>
+    <th>Calculated</th>
+    <th>Compounded</th>
+  </tr>
+
+<% for subscription_setting in @subscription_settings %>
+  <tr>
+    <td><%=h subscription_setting.subscription_type %></td>
+    <td><%=h subscription_setting.interest_rate %></td>
+    <td><%=h subscription_setting.calculated %></td>
+    <td><%=h subscription_setting.compounded %></td>
+    <td><%= link_to 'Show', subscription_setting %></td>
+    <td><%= link_to 'Edit', edit_subscription_setting_path(subscription_setting) %></td>
+    <td><%= link_to 'Destroy', subscription_setting, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New subscription_setting', new_subscription_setting_path %>

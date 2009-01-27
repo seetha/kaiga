@@ -1,0 +1,28 @@
+<h1>Editing subscription_setting</h1>
+
+<% form_for(@subscription_setting) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :subscription_type %><br />
+    <%= f.text_field :subscription_type %>
+  </p>
+  <p>
+    <%= f.label :interest_rate %><br />
+    <%= f.text_field :interest_rate %>
+  </p>
+  <p>
+    <%= f.label :calculated %><br />
+    <%= f.text_field :calculated %>
+  </p>
+  <p>
+    <%= f.label :compounded %><br />
+    <%= f.text_field :compounded %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @subscription_setting %> |
+<%= link_to 'Back', subscription_settings_path %>

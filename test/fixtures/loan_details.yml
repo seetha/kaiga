@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  loandetaildate: 2009-01-12
+  principal: MyString
+  intrest: 1.5
+  balance: 1.5
+
+two:
+  loandetaildate: 2009-01-12
+  principal: MyString
+  intrest: 1.5
+  balance: 1.5

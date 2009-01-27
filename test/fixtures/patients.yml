@@ -1,0 +1,37 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  first_name: MyString
+  last_name: MyString
+  middle_name: MyString
+  age: MyString
+  nationality: MyString
+  pobox: MyString
+  dob: MyString
+  gender: MyString
+  occupation: MyString
+  address1: MyString
+  address2: MyString
+  address3: MyString
+  resofficephone: MyString
+  mobile: MyString
+  referral_type: MyString
+  previous_investigation: MyString
+
+two:
+  first_name: MyString
+  last_name: MyString
+  middle_name: MyString
+  age: MyString
+  nationality: MyString
+  pobox: MyString
+  dob: MyString
+  gender: MyString
+  occupation: MyString
+  address1: MyString
+  address2: MyString
+  address3: MyString
+  resofficephone: MyString
+  mobile: MyString
+  referral_type: MyString
+  previous_investigation: MyString

@@ -1,0 +1,44 @@
+<h1>Editing fixed_deposit</h1>
+
+<% form_for(@fixed_deposit) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :son_daughter_wife_of %><br />
+    <%= f.text_field :son_daughter_wife_of %>
+  </p>
+  <p>
+    <%= f.label :resident_address %><br />
+    <%= f.text_field :resident_address %>
+  </p>
+  <p>
+    <%= f.label :fdopen_date %><br />
+    <%= f.date_select :fdopen_date %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :age %><br />
+    <%= f.text_field :age %>
+  </p>
+  <p>
+    <%= f.label :father_husband %><br />
+    <%= f.text_field :father_husband %>
+  </p>
+  <p>
+    <%= f.label :relationship_with_member %><br />
+    <%= f.text_field :relationship_with_member %>
+  </p>
+  <p>
+    <%= f.label :type %><br />
+    <%= f.text_field :type %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @fixed_deposit %> |
+<%= link_to 'Back', fixed_deposits_path %>

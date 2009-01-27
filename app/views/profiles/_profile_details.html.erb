@@ -1,0 +1,7 @@
+<h3>Profile</h3>
+
+<table class="overview">
+	<% @user.profile_attributes.each do |column| -%>
+		<%= cell "#{column.humanize}", "#{@user.send(column) || '-'}" %>
+	<% end -%>
+</table>
