@@ -1,0 +1,28 @@
+<h1>Listing member_settings</h1>
+
+<table>
+  <tr>
+    <th>Dearness allowance</th>
+    <th>Retirement age</th>
+    <th>Min subscription amount</th>
+    <th>Max subscription amount</th>
+    <th>Multiple</th>
+  </tr>
+
+<% for member_setting in @member_settings %>
+  <tr>
+    <td><%=h member_setting.dearness_allowance %></td>
+    <td><%=h member_setting.retirement_age %></td>
+    <td><%=h member_setting.min_subscription_amount %></td>
+    <td><%=h member_setting.max_subscription_amount %></td>
+    <td><%=h member_setting.multiple %></td>
+    <td><%= link_to 'Show', member_setting %></td>
+    <td><%= link_to 'Edit', edit_member_setting_path(member_setting) %></td>
+    <td><%= link_to 'Destroy', member_setting, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New member_setting', new_member_setting_path %>

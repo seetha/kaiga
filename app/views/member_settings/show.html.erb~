@@ -1,0 +1,28 @@
+<p>
+  <b>Dearness allowance:</b>
+  <%=h @member_setting.dearness_allowance %>
+</p>
+
+<p>
+  <b>Retirement age:</b>
+  <%=h @member_setting.retirement_age %>
+</p>
+
+<p>
+  <b>Min subscription amount:</b>
+  <%=h @member_setting.min_subscription_amount %>
+</p>
+
+<p>
+  <b>Max subscription amount:</b>
+  <%=h @member_setting.max_subscription_amount %>
+</p>
+
+<p>
+  <b>Multiple:</b>
+  <%=h @member_setting.multiple %>
+</p>
+
+
+<%= link_to 'Edit', edit_member_setting_path(@member_setting) %> |
+<%= link_to 'Back', member_settings_path %>

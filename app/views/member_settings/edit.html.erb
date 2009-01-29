@@ -1,0 +1,32 @@
+<h1>Editing member setting</h1>
+
+<% form_for(@member_setting) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :dearness_allowance %><br />
+    <%= f.text_field :dearness_allowance %>
+  </p>
+  <p>
+    <%= f.label :retirement_age %><br />
+    <%= f.text_field :retirement_age %>
+  </p>
+  <p>
+    <%= f.label :min_subscription_amount %><br />
+    <%= f.text_field :min_subscription_amount %>
+  </p>
+  <p>
+    <%= f.label :max_subscription_amount %><br />
+    <%= f.text_field :max_subscription_amount %>
+  </p>
+  <p>
+    <%= f.label :multiple %><br />
+    <%= f.text_field :multiple %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @member_setting %> |
+<%= link_to 'Back', member_settings_path %>
